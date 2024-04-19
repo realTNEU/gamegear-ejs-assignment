@@ -6,53 +6,8 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
-const pool = require('./db');
-function contactSubmit() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-  console.log(name)
-  console.log(email)
-  console.log(message)
-  if(name=''){
-      alert("Please enter your details")
-  }
-  else if(email==''){
-          alert("Please enter your details")
-      }
-  else if(message==''){
-              alert("Please enter your message")
-          }
-  else{
-      alert("Your message has been sent")
-  }
-  try {
-    pool.getConnection((err, connection) => {
-        if (err) {
-            console.error('Error connecting to MySQL database:', err);
-            throw err; // Re-throw to indicate connection failure
-        }
+// const pool = require('./db');
 
-        console.log('Connected to MySQL database!');
-
-        connection.query(`INSERT INTO contact(name,email,message) values('${name}','${email}','${message}');`, (error, results, fields) => {
-          if (error) {
-              console.error('Error executing query:', error);
-          } else {
-              console.log('Query results:', results); // Array of rows
-              console.log('Query fields:', fields); // Array of field metadata
-          }
-      });
-      
-        connection.release(); 
-    });
-} catch (error) {
-    console.error('Error:', error);
-}
-  pool.getConnection((err, connection) => {
-   console.log(err)
-  });
-}
 
 async function fetchUsers() {
     try {
