@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameGear | Build</title>
+    <link rel="shortcut icon" href="css/media/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/build.css" />
+  </head>
+  <body>
+    <%- include('navbar') %>
+
+    <section class="budgetselector">
+      <div class="budget">
+        <h1>Select Your Gaming Budget</h1>
+        <p>Budget: ₹ <span id="budgetDisplay">30000</span></p>
+        <input
+          type="range"
+          min="30000"
+          max="300000"
+          value="0"
+          id="budgetSlider"
+          oninput="updateBudget()"
+        />
+        <div id="specDisplay">
+          <p class="budgetName" id="budgetName">Budget Build</p>
+          <p class="cpu" id="cpu">Processor: Ryzen 5 5600X</p>
+          <p class="gpu" id="gpu">Graphics Card: GTX 1660ti</p>
+          <p class="ram" id="ram">RAM: 16GB DDR4</p>
+          <h2>Buy The Parts for Your PC</h2>
+
+          <div class="partlinks">
+            <p id="caselink">
+              Case:
+              <a
+                href="https://www.flipkart.com/cooler-master-masterbox-q300l-mini-tower-cabinet/p/itmbfe5f0cb553f6"
+                >Cooler Master MasterBox Q30L</a
+              >
+            </p>
+            <p id="aiolink">
+              AIO/Cooling:
+              <a
+                href="https://www.amazon.in/CORSAIR-Hydro-Liquid-Cooler-Radiator/dp/B079NXZQBC"
+                >Corsair Hydro H60
+              </a>
+            </p>
+            <p id="motherboardlink">
+              Motherboard:
+              <a
+                href="https://www.flipkart.com/asus-prime-b550m-a-wifi-ii-motherboard/p/itm25ab43b62377d?pid=MBDGJG47MDNFCND3&lid=LSTMBDGJG47MDNFCND37ZHI0Q&marketplace=FLIPKART&q=ASUS+B550M+Mortar+Wifi+&store=6bo%2Fg0i%2Fy7i&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=963539df-9c01-4859-a04c-ef8a3ebd04f8.MBDGJG47MDNFCND3.SEARCH&ppt=sp&ppn=sp&ssid=9c59oyhh740000001710300689300&qH=57fb6d9f2ddf0c5c"
+                >ASUS B550M Mortar Wifi
+              </a>
+            </p>
+            <p id="cpuliink">
+              Processor:
+              <a
+                href="https://www.flipkart.com/amd-ryzen-5-5600x-3-7-ghz-upto-4-6-am4-socket-6-cores-12-threads-desktop-processor/p/itmf1766d0e2c225?pid=PSRFXS4GNXRNTR6A&lid=LSTPSRFXS4GNXRNTR6AU4EZF6&marketplace=FLIPKART&q=rayzen+5+5600x+&store=4rr%2Fkm5%2Fbmp&spotlightTagId=TrendingId_4rr%2Fkm5%2Fbmp&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=86197d5d-4ed8-4640-bf0c-016ba27415ab.PSRFXS4GNXRNTR6A.SEARCH&ppt=sp&ppn=sp&ssid=c5o01pt5kg0000001710300603276&qH=8f26c594475fe545"
+                >Ryzen 5 5600x</a
+              >
+            </p>
+            <p id="gpulink">
+              Graphics Card:
+              <a
+                href="https://www.amazon.in/GALAX-GeForce%C2%AE-1-Click-192-bit-Graphic/dp/B07P1T367X/ref=sr_1_1?crid=3UU0QP8RTCAL7&dib=eyJ2IjoiMSJ9.mGpb2cW7W44IPYVFVJkSq1S92U13uXDbSlmMD-i4cgv38RmoTRWx5Xo1WfW4jfF37rbJgwR4e2_HczlBQEb3_8InSFMy5eLKFVnJyl-1pT-gzXRld0VWatNU21_MWJaTv0A0x7mBj2DJO9UbcNIWYkyw0ix-Cl10YkD4lFLRY-j44rM7ffbs-y6VbA1k0Hos6GSBzaFknIXoQ9WDUS6nv1NdTiAHiGLIKovfFJTK6p2JdTDcgS2NfB3iYt__54d6Dn6OTctye-IEi5ZuWJRx_1Rj7OjknbpntqIGZxiS5hM.r7B0ssAjP71G8zmjOEJ9d3WICCaRlKx07X--1k_0T94&dib_tag=se&keywords=nvidia+gtx+1660ti&qid=1710300851&s=computers&sprefix=nvidia+gtx+1660ti%2Ccomputers%2C210&sr=1-1"
+                >Galaz Geforce GTX 1660ti</a
+              >
+            </p>
+            <p id="ramlink">
+              RAM:
+              <a
+                href="https://www.amazon.in/G-SKILL-FBA4719692004970-Ripjaws-288-Pin-SDRAM/dp/B015FXXBW0/ref=sr_1_1?crid=7UUF3KHZIUSO&dib=eyJ2IjoiMSJ9.qSo6Zo3q5Hx8pQ6lIZ_SHWpHFeDc0MDhLttxj_Qv-Kn6vxJpy11shTScoZsftPKCDRdPBx-0NDH3Y5awdwF7LVxqYk68-3ebEEy85-OSyvgbAxUcmGegABQJkiz3yl7PFrgXNY823bxzTHR-m3sEzzcDDyOeOtGJtbZXhJnzLsmDnCefG2fx1sya0nxE4aY7chu4XCg0XSGF6UmIl56BJYUJMvzS4d5x6gjSUDooC_6OkLxQ5Fw9fpRDggYFFcqVIYEjtLeY_HNy4Kh0Iz2U5cmCK5STEnKyJsD3tmGq_gk.8op_WtQJvw-mz3y5xu5PfafaHcHw9tcslhINng5450o&dib_tag=se&keywords=G.Skill+Ripjaws+V+16GB+%282x8GB%29+3600MHz+CL1&qid=1710300912&s=computers&sprefix=g.skill+ripjaws+v+16gb+2x8gb+3600mhz+cl1%2Ccomputers%2C210&sr=1-1"
+                >G.Skill Ripjaws V 16GB (2x8GB) 3600MHz CL1</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('footer') %>
+  </body>
+  <script src="scripts/index.js"></script>
+</html>

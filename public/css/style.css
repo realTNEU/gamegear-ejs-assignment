@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #2d2d2d;
+    
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #E4F1FF;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #E2E8F0;
+}
+
+.nav-link-btn{
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 5px;
+  color: #E2E8F0;
+  background-color: #9400FF;
+  border: #9400FF;
+  outline: #9400FF;
+  border-radius: 10px;
+}
+
+.nav-link:hover{
+    color: #9400FF;
+}
+
+.nav-link-btn:hover{
+  color: #AED2FF;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #E4F1FF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background-color: #27005D;
+    color: #E4F1FF;
+    
+  }
+
+
+
+
+
+
+  .mainbody h1{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bolder; 
+    margin-top: 20px; 
+  }
+  
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 2rem;
+  }
+
+  .card1{
+    background-color: #9400FF;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+
+  }
+
+  .card1front,.card1back{
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.35);
+    position: absolute;
+    backface-visibility: hidden;
+    
+  }
+  .card1front{
+    width:100%;
+    height: 100%;
+    background-image: url(../media/lowbudgetpc.jpg);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.35);
+    
+  }
+  .card1:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+  }
+
+  .card1back{
+    background-color: #2d2d2d;
+    transform: rotateY(180deg);
+  }
+
+  .card1 p{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    padding-bottom: 3px;
+  }
+
+  .card1 h2{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    padding: -3px;
+  }
+  .card1 h5{
+    margin: 10px ;
+    font-size: larger;
+  
+  }
+
+  
+
+  .card2{
+    background-color: #9400FF;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+
+  }
+
+  .card2front,.card2back{
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.35);
+    position: absolute;
+    backface-visibility: hidden;
+    
+  }
+  .card2front{
+    width:100%;
+    height: 100%;
+    background-image: url(../media/medbudgetpc.jpg);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.35);
+    
+  }
+  .card2:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+  }
+
+  .card2back{
+    background-color: #2d2d2d;
+    transform: rotateY(180deg);
+  }
+
+  .card2 p{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    padding-bottom: 3px;
+  }
+
+  .card2 h2{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    padding: -3px;
+  }
+  .card2 h5{
+    margin: 10px ;
+    font-size: larger;
+  
+  }
+
+
+
+  .card3{
+    background-color: #9400FF;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+
+  }
+
+  .card3front,.card3back{
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.35);
+    position: absolute;
+    backface-visibility: hidden;
+    
+  }
+  .card3front{
+    width:100%;
+    height: 100%;
+    background-image: url(../media/highbudgetpc.jpg);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.35);
+    
+  }
+  .card3:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+  }
+
+  .card3back{
+    background-color: #2d2d2d;
+    transform: rotateY(180deg);
+  }
+
+  .card3 p{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    padding-bottom: 3px;
+  }
+
+  .card3 h2{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: -3px;
+  }
+  .card3 h5{
+    margin: 10px ;
+    font-size: larger;
+    
+  
+  }
+
+  .card1,.card2,.card3{
+    grid-column: 1;
+  }
+  .about-area{
+    text-align: center;
+    margin: 1.25rem;
+    padding: 1.25rem;
+
+  }
+
+  .about-area h3{
+    color: #E4F1FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+    .footer-list a{
+      font-size: larger;
+    }
+
+    .footer {
+      width: 100%;
+      background-color: #9400FF;
+      display: flex;
+      align-items: center;
+    }
+    .footer > .footer-header {
+      flex: 0.95;
+      padding-left: 1rem;
+    }
+    .footer > .footer-header > .footer-title {
+      font-size: 25px;
+      color: #E4F1FF;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .footer > .footer-list {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer > .footer-list > li {
+      list-style-type: none;
+    }
+    .footer > .footer-list > li a {
+      text-decoration: none;
+      color: aliceblue;
+      cursor: pointer;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+    }
+    .footer > #footer-check {
+        display: none;
+    }
+#navlog{
+  color: #E4F1FF;
+}
+
+
+
+@media (min-width:1110px){
+    .card-container{
+      display: inline-flex;
+    }
+    .login-register-container{
+      display: inline-flex;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position:fixed ;
+        left: -100%;
+        top: 5rem;
+        flex-direction:column;
+        background-color: #27005D;
+        width: 20%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+      
+        z-index: 1000;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}

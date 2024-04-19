@@ -1,0 +1,153 @@
+.login {
+    margin-top: 5rem;
+    padding: 2rem 0; 
+    text-align: center; 
+  }
+  
+  .login-form {
+    border: 4px solid #efefef;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+  #login-title{
+    font-size: 5rem;
+  }
+  .login-form h1 {
+    text-align: center;
+    padding: 1rem;
+    
+  }
+  
+  .login-form label {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: .5rem;
+  }
+  
+  .login-form input,
+  .login-form textarea {
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .login-form textarea {
+    height: 10rem;
+    resize: vertical;
+  }
+  
+  .login-form button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .login-form input,
+    .login-form textarea {
+      font-size: 0.8rem;
+    }
+  
+    .login-form h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+  .footer-list a {
+    font-size: larger;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: #9400FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: auto;
+  }
+  
+  .footer > .footer-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  
+  .footer > .footer-header > .footer-title {
+    font-size: 25px;
+    color: #E4F1FF;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .footer > .footer-list {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .footer > .footer-list > li {
+    list-style-type: none;
+  }
+  
+  .footer > .footer-list > li a {
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .footer > #footer-check {
+    display: none;
+  }
+  
+  input{
+    font-size: large;
+    padding: 1rem;
+  }
+  input:focus{
+    outline: none;
+  }
+  textarea{
+    font-size: x-large;
+  }
+
+  textarea:focus{
+    outline: none;
+  }
+
+  .login form p{
+    
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: left;
+    display: inline;
+  
+  }
+
+#signup-button{
+  width:50%;
+  margin: 3.3rem;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 0px;
+}
+.login form button a{
+  color: #E4F1FF;
+}
+
+.login form input{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}

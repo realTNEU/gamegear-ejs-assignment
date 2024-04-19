@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameGear | Sign Up</title>
+    <link rel="shortcut icon" href="css/media/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    
+</head>
+<body>
+    <%- include('navbar') %>
+
+      <section class="signup">
+        <form action="" class="signup-form">
+          <h1 id="signup-title">Sign Up</h1>
+          <label for="name">Full Name</label>
+          <input name="username" type="text" id="sname" required>
+          <br>
+          <label for="email">Email</label>
+          <input name="email" type="email" id="semail" required>
+          <br>
+          <label for="password">Password</label>
+          <input name="password" type="password" id="spassword" placeholder="" required></textarea>
+          <button type="submit" onclick="signUPSubmit()">Submit</button>
+          <p>Already a member?</p>
+          <a href="login.html"><button type="button" id="signup-button">Login</button></a>
+        </form>
+      </section>
+      
+
+
+
+
+    
+  <% - include('footer') %>
+</body>
+
+<script type="module" src="scripts/index.js"></script>
+</html>
